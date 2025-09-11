@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { WidgetParent } from './components/widget-parent/widget-parent';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [WidgetParent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
