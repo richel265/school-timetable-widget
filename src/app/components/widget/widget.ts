@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Currentdayservice } from '../../services/currentdayservice';
 
 @Component({
   selector: 'app-widget',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './widget.scss'
 })
 export class Widget {
-
+  currentdayservice =  inject(Currentdayservice)
 }
