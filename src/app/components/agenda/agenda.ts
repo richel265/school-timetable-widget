@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Agendaservice } from '../../services/agendaservice';
+import { Currentdayservice } from '../../services/currentdayservice';
 
 @Component({
   selector: 'app-agenda',
@@ -7,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './agenda.scss'
 })
 export class Agenda {
-
+  agendaservice = inject(Agendaservice)
+  currentdayservice = inject(Currentdayservice)
 }

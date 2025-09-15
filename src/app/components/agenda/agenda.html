@@ -1,1 +1,27 @@
-<p>agenda works!</p>
+<article>
+    <header>
+        <h3>
+            Classes for the day
+        </h3>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Period</th>
+                <th>Start time</th>
+                <th>End time</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (class of agendaservice.schooldays()[currentdayservice.currentDay-1].classesList; track agendaservice.schooldays()[currentdayservice.currentDay-1].halfDay) {
+                <tr>
+                    <th>{{class}}</th>
+                    <td>{{agendaservice.classPeriodCalculator(currentdayservice.currentDay, class)}}</td>
+                    <td>{{agendaservice.classTimesCalculator(currentdayservice.currentDay, class)[0]}}</td>
+                    <td>{{agendaservice.classTimesCalculator(currentdayservice.currentDay, class)[1]}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</article>

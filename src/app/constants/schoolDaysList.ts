@@ -7,7 +7,7 @@ export const DAYSLIST = [
     new SchoolDay(3,[''],false),
     new SchoolDay(4,[''],false),
     new SchoolDay(5,[''],false),
-    new SchoolDay(6,[''],false),
+    new SchoolDay(6,[POSSIBLECLASSES.get("fr"),POSSIBLECLASSES.get("mus"),POSSIBLECLASSES.get('math'),POSSIBLECLASSES.get("su"),POSSIBLECLASSES.get("en")],false),
     new SchoolDay(7,[''],false),
     new SchoolDay(8,[''],false),
     new SchoolDay(9,[''],false),
