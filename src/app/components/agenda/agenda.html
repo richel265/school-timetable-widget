@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            @for (class of agendaservice.schooldays()[currentdayservice.currentDay-1].classesList; track agendaservice.schooldays()[currentdayservice.currentDay-1].halfDay) {
+            @for (class of agendaservice.schooldays()[currentdayservice.currentDay-1].classesList; track agendaservice.schooldays()[currentdayservice.currentDay-1].classesList.indexOf(class)) {
                 <tr>
                     <th>{{class}}</th>
                     <td>{{agendaservice.classPeriodCalculator(currentdayservice.currentDay, class)}}</td>

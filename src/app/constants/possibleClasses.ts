@@ -7,6 +7,6 @@ POSSIBLECLASSES.set("sci2", "Science Option")
 POSSIBLECLASSES.set("robo", "Robotics")
 POSSIBLECLASSES.set("su", "Social Universe")
 POSSIBLECLASSES.set("math","Mathematics")
-POSSIBLECLASSES.set("physed", "Physical Education")
+POSSIBLECLASSES.set("pe", "Physical Education")
 POSSIBLECLASSES.set("music", "Music")
 

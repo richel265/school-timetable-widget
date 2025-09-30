@@ -8,5 +8,7 @@ import { Currentdayservice } from '../../services/currentdayservice';
   styleUrl: './widget.scss'
 })
 export class Widget {
-  currentdayservice =  inject(Currentdayservice)
+  public currentdayservice = inject(Currentdayservice)
+
+  date = this.currentdayservice.update()
 }

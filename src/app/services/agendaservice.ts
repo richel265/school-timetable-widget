@@ -1,11 +1,13 @@
-import { Injectable, signal } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
 import { DAYSLIST } from '../constants/schoolDaysList';
+import { Currentdayservice } from './currentdayservice';
 
 @Injectable({
   providedIn: 'root'
 })
 export class Agendaservice {
   schooldays = signal(DAYSLIST)
+  currentdayservice = inject(Currentdayservice)
 
   classPeriodCalculator(day: number, schoolclass: unknown){
     const dayObject = this.schooldays()[day-1]
@@ -25,8 +27,10 @@ export class Agendaservice {
   }
   
   classTimesCalculator(day: number, schoolclass: unknown){
+    
     const period = this.classPeriodCalculator(day,schoolclass)
 
     return this.classPeriodTimeCalculator(period)
   }
+
 }

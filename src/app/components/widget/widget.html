@@ -1,5 +1,13 @@
-<div id="widget">
-    <h2>Day {{currentdayservice.schoolDays()[currentdayservice.currentDay-1].dayNumber}}</h2>
-    <p>It's {{currentdayservice.date.toLocaleTimeString()}}</p>
+
+
+
+<article>
+        <header>
+                <h2>
+                Day {{currentdayservice.schoolDays()[currentdayservice.currentDay-1].dayNumber}}
+            </h2>
+            <sub>{{currentdayservice.currentDayMessage}}</sub>
+        </header>
+    <p>It's {{currentdayservice.date.toLocaleTimeString()}}, class ends in {{currentdayservice.currentFormatEndTimeString}}</p>
     <em>Next class: {{currentdayservice.currentNextClass}}</em>
-</div>
+</article>
