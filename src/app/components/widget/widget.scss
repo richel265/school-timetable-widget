@@ -1,0 +1,19 @@
+#dayheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        display: inline;
+        flex: 0;
+        padding: 20px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    input {
+        flex: 1;
+        padding: 0px;
+        font-size: 2em;
+        font-weight: bold;
+        width: 2em;
+    }
+}
