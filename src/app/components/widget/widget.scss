@@ -1,0 +1,33 @@
+#dayheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        display: inline;
+        flex: 0;
+        margin: 3.5px;
+        font-size: 1.867em;
+        font-weight: 400;
+    }
+    input {
+        flex: 1;
+        padding: 0px;
+        margin: 3.5px;
+        font-size: 1.867em;
+        font-weight: 650;
+        width: 0.67em;
+        height: 1em;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#subtitle {
+    font-size: 0.9em;
+    font-weight: light;
+}

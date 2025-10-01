@@ -3,10 +3,13 @@
 
 <article>
         <header>
-                <h2>
-                Day {{currentdayservice.schoolDays()[currentdayservice.currentDay-1].dayNumber}}
+            <span id="dayheader"><h2>
+                Day
             </h2>
-            <sub>{{currentdayservice.currentDayMessage}}</sub>
+            <input type="text" placeholder="{{currentdayservice.currentDay}}">
+        </span>
+                
+        <p id="subtitle">{{currentdayservice.currentDayMessage}}</p>
         </header>
     <p>It's {{currentdayservice.date.toLocaleTimeString()}}, class ends in {{currentdayservice.currentFormatEndTimeString}}</p>
     <em>Next class: {{currentdayservice.currentNextClass}}</em>
